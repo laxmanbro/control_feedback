@@ -31,6 +31,7 @@
 %\usepackage{algpseudocode}
 \usepackage{enumitem}
 \usepackage{mathtools}
+\usepackage{steinmetz}
 \usepackage{tikz}
 \usepackage[american]{circuitikz}
 \usepackage{verbatim}
@@ -38,7 +39,7 @@
 \usepackage[breaklinks=true]{hyperref}
 %\usepackage{stmaryrd}
 \usepackage{tkz-euclide} % loads  TikZ and tkz-base
-%\usetkzobj{all}
+\usetkzobj{all}
 \usetikzlibrary{decorations.markings}
 \usetikzlibrary{shapes.geometric}
 \newif\iflabrev
@@ -156,10 +157,10 @@ columns=fullflexible
 \vspace{3cm}
 \title{
 %	\logo{
-Wein-bridge oscillator
+Wein Bridge Oscillator
 %	}
 }
-\author{ Vedala Sai Ashok$^{*}$% <-this % stops a space
+\author{ Laxman Reddy Bandi$^{*}$% <-this % stops a space
 	\thanks{*The author is with the Department
 		of Electrical Engineering, Indian Institute of Technology, Hyderabad
 		502285 India. All content in this manual is released under GNU GPL.  Free and open source.}
@@ -249,8 +250,12 @@ Wein-bridge oscillator
 % creates the second title. It will be ignored for other modes.
 %\IEEEpeerreviewmaketitle
 %\begin{abstract}
-%The objective of this manual is to introduce control system design at an elementary level.
+%This manual is an introduction to control systems in feedback circuits. Links to sample Python codes are available in the text.  
 %\end{abstract}
-%\section{Feedback Circuits}
-\input{chapters/ee18btech11049.tex}
+%Download python codes using 
+%\begin{lstlisting}
+%svn co https://github.com/gadepall/school/trunk/control/feedback/codes
+%\end{lstlisting}
+%\section{Op-Amp RC Oscillator Circuits}
+\input{./chapters/ee18btech11049.tex}
 \end{document}
