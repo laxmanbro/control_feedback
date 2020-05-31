@@ -1,4 +1,4 @@
-Redesign the circuit of Fig. \ref{fig:ee18btech11049_fig1} for operation at 10KHz using same values of resistance. If at 10KHz the op amp provides an excess phase shift (lag) of 5.7\degree , what will be the frequency of oscillation? Assume the phase shift introduced by the op amp remains constant for frequencies around 10KHz.)To restore operation to 10KHz, what change must be made in the shunt resistor of the wien bridge? Also, to what value must $R_{2}/R_{1}$ be changed ?
+Redesign the circuit of Fig. \ref{fig:ee18btech11049_fig1} for operation at 10KHz using same values of resistance. If at 10KHz the op amp provides an excess phase shift (lag) of 5.7\degree , what will be the frequency of oscillation? Assume the phase shift introduced by the op amp remains constant for frequencies around 10KHz.)To restore operation to 10KHz, what change must be made in the shunt resistor of the wien bridge? Also, to what value must $R_{2}/R_{1}$ be changed ? (  initially $R_2 = 10k\Omega$, $R_1 = 5k\Omega$ )
 \begin{figure}[!ht]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11049/ee18btech11049_1.tex}}
@@ -213,7 +213,21 @@ So, phase shift $\phi\brak{\omega}$ is
     \phi\brak{\omega}  = -\tan^{-1}\brak{\frac{\omega CR - \frac{1}{\omega CR_s}}{2+\frac{R}{R_s}}}
 \end{align}
 
+
+\begin{align}
+    \omega CR - \frac{1}{\omega CR_s} &= \brak{2+\frac{R}{R_s}} \brak{-0.1}
+\end{align}
+
 from \ref{eq:ee18btech11049_phase_mine} we can find value of $R_s$ when $\omega = \frac{1}{RC}$ 
+
+\begin{align}
+   1- \frac{R}{R_s} &= -0.2 - 0.1\brak{\frac{R}{R_s}} 
+\end{align}
+\begin{align}
+   1 + 0.2  &= \frac{R}{R_s} - 0.1\brak{\frac{R}{R_s}}  \\
+   \implies 1.2 &= 0.9 \brak{\frac{R}{R_s}}
+\end{align}
+
 \begin{align}
    R_s = 0.75R \\
    R_s = 7.5k\Omega 
