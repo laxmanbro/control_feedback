@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.29)  30 MAY 2020 21:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.29)  31 MAY 2020 14:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1430,10 +1430,10 @@ LaTeX Warning: Label `eq:ee18btech11049_freq' multiply defined.
 LaTeX Warning: Label `eq:ee18btech11049_freq' multiply defined.
 
 
-LaTeX Warning: Label `eq:ee18btech11049_freq' multiply defined.
+LaTeX Warning: Label `fig:ee18btech11049_final' multiply defined.
 
 
-LaTeX Warning: Label `eq:ee18btech11049_freq' multiply defined.
+LaTeX Warning: Label `fig:ee18btech11049_final' multiply defined.
 
 )
 \openout1 = `gvv_feedback_manual.aux'.
@@ -1647,76 +1647,154 @@ File: utxsyc.fd 2000/12/15 v3.1
 \realshift=\dimen381
 \realshift=\dimen382
 )
-Underfull \hbox (badness 2221) in paragraph at lines 79--82
-\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The loop gain of wein bridge
+Underfull \hbox (badness 10000) in paragraph at lines 78--82
+
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--96
+
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 92--96
+\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The phase shift in loop can
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
 (./figs/ee18btech11049/ee18btech11049_2.tex
 \realshift=\dimen383
 \realshift=\dimen384
 \realshift=\dimen385
 \realshift=\dimen386
-) [2]
-Underfull \hbox (badness 10000) in paragraph at lines 186--190
+)
+Underfull \hbox (badness 10000) in paragraph at lines 223--227
 
  []
 
 
-Underfull \hbox (badness 7740) in paragraph at lines 186--190
+Underfull \hbox (badness 7740) in paragraph at lines 223--227
 \OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 Sub-sti-tut-ing the val-ues of $\OML
 /txmi/m/it/12 R$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--210
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
 
  []
 
 Package epstopdf Info: Source file: <./figs/ee18btech11049/ee18btech11049_1.eps
 >
-(epstopdf)                    date: 2020-05-30 20:33:46
-(epstopdf)                    size: 16361 bytes
+(epstopdf)                    date: 2020-05-31 14:04:07
+(epstopdf)                    size: 18648 bytes
 (epstopdf)             Output file: <./figs/ee18btech11049/ee18btech11049_1-eps
 -converted-to.pdf>
-(epstopdf)                    date: 2020-05-30 20:55:24
-(epstopdf)                    size: 8791 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figs/ee18btech11049/ee18
 btech11049_1-eps-converted-to.pdf ./figs/ee18btech11049/ee18btech11049_1.eps>
-(epstopdf)             \includegraphics on input line 228.
-Package epstopdf Info: Output file is already uptodate.
-<./figs/ee18btech11049/ee18btech11049_1-eps-converted-to.pdf, id=87, 462.52798p
+(epstopdf)             \includegraphics on input line 267.
+runsystem(repstopdf --outfile=./figs/ee18btech11049/ee18btech11049_1-eps-conver
+ted-to.pdf ./figs/ee18btech11049/ee18btech11049_1.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <./figs/ee18btech11049/ee18btech11049_1-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2020-05-31 14:08:13
+(epstopdf)                    size: 10602 bytes.
+<./figs/ee18btech11049/ee18btech11049_1-eps-converted-to.pdf, id=93, 462.52798p
 t x 346.89601pt>
 File: ./figs/ee18btech11049/ee18btech11049_1-eps-converted-to.pdf Graphic file 
 (type pdf)
 <use ./figs/ee18btech11049/ee18btech11049_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./figs/ee18btech11049/ee18btech11049_1-eps-converted-t
-o.pdf  used on input line 228.
+o.pdf  used on input line 267.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-
-Underfull \vbox (badness 1418) has occurred while \output is active []
-
+[3 <./figs/ee18btech11049/ee18btech11049_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./figs/ee18btech11049/ee18btech11049_2.eps
 >
-(epstopdf)                    date: 2020-05-30 20:33:52
-(epstopdf)                    size: 23256 bytes
+(epstopdf)                    date: 2020-05-31 14:03:59
+(epstopdf)                    size: 33338 bytes
 (epstopdf)             Output file: <./figs/ee18btech11049/ee18btech11049_2-eps
 -converted-to.pdf>
-(epstopdf)                    date: 2020-05-30 20:55:25
-(epstopdf)                    size: 11728 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figs/ee18btech11049/ee18
 btech11049_2-eps-converted-to.pdf ./figs/ee18btech11049/ee18btech11049_2.eps>
-(epstopdf)             \includegraphics on input line 249.
-Package epstopdf Info: Output file is already uptodate.
-<./figs/ee18btech11049/ee18btech11049_2-eps-converted-to.pdf, id=89, 462.52798p
-t x 346.89601pt>
+(epstopdf)             \includegraphics on input line 289.
+runsystem(repstopdf --outfile=./figs/ee18btech11049/ee18btech11049_2-eps-conver
+ted-to.pdf ./figs/ee18btech11049/ee18btech11049_2.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <./figs/ee18btech11049/ee18btech11049_2-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2020-05-31 14:08:13
+(epstopdf)                    size: 17900 bytes.
+<./figs/ee18btech11049/ee18btech11049_2-eps-converted-to.pdf, id=144, 462.52798
+pt x 346.89601pt>
 File: ./figs/ee18btech11049/ee18btech11049_2-eps-converted-to.pdf Graphic file 
 (type pdf)
 <use ./figs/ee18btech11049/ee18btech11049_2-eps-converted-to.pdf>
 Package pdftex.def Info: ./figs/ee18btech11049/ee18btech11049_2-eps-converted-t
-o.pdf  used on input line 249.
+o.pdf  used on input line 289.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-) [3 <./figs/ee18btech11049/ee18btech11049_1-eps-converted-to.pdf> <./figs/ee18
-btech11049/ee18btech11049_2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./figs/ee18btech11049/ee18btech11049_3.eps
+>
+(epstopdf)                    date: 2020-05-31 14:04:00
+(epstopdf)                    size: 23460 bytes
+(epstopdf)             Output file: <./figs/ee18btech11049/ee18btech11049_3-eps
+-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/ee18btech11049/ee18
+btech11049_3-eps-converted-to.pdf ./figs/ee18btech11049/ee18btech11049_3.eps>
+(epstopdf)             \includegraphics on input line 313.
+runsystem(repstopdf --outfile=./figs/ee18btech11049/ee18btech11049_3-eps-conver
+ted-to.pdf ./figs/ee18btech11049/ee18btech11049_3.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <./figs/ee18btech11049/ee18btech11049_3-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2020-05-31 14:08:13
+(epstopdf)                    size: 14833 bytes.
+<./figs/ee18btech11049/ee18btech11049_3-eps-converted-to.pdf, id=146, 462.52798
+pt x 346.89601pt>
+File: ./figs/ee18btech11049/ee18btech11049_3-eps-converted-to.pdf Graphic file 
+(type pdf)
+<use ./figs/ee18btech11049/ee18btech11049_3-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/ee18btech11049/ee18btech11049_3-eps-converted-t
+o.pdf  used on input line 313.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+Package epstopdf Info: Source file: <./figs/ee18btech11049/ee18btech11049_4.eps
+>
+(epstopdf)                    date: 2020-05-31 14:04:11
+(epstopdf)                    size: 64150 bytes
+(epstopdf)             Output file: <./figs/ee18btech11049/ee18btech11049_4-eps
+-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/ee18btech11049/ee18
+btech11049_4-eps-converted-to.pdf ./figs/ee18btech11049/ee18btech11049_4.eps>
+(epstopdf)             \includegraphics on input line 336.
+runsystem(repstopdf --outfile=./figs/ee18btech11049/ee18btech11049_4-eps-conver
+ted-to.pdf ./figs/ee18btech11049/ee18btech11049_4.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <./figs/ee18btech11049/ee18btech11049_4-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2020-05-31 14:08:14
+(epstopdf)                    size: 26155 bytes.
+<./figs/ee18btech11049/ee18btech11049_4-eps-converted-to.pdf, id=148, 462.52798
+pt x 346.89601pt>
+File: ./figs/ee18btech11049/ee18btech11049_4-eps-converted-to.pdf Graphic file 
+(type pdf)
+<use ./figs/ee18btech11049/ee18btech11049_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/ee18btech11049/ee18btech11049_4-eps-converted-t
+o.pdf  used on input line 336.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+) [4 <./figs/ee18btech11049/ee18btech11049_2-eps-converted-to.pdf> <./figs/ee18
+btech11049/ee18btech11049_3-eps-converted-to.pdf> <./figs/ee18btech11049/ee18bt
+ech11049_4-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
  (./gvv_feedback_manual.aux)
@@ -1731,10 +1809,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
  ) 
 Here is how much of TeX's memory you used:
- 41584 strings out of 481239
- 941593 string characters out of 5920377
- 1346825 words of memory out of 5000000
- 55960 multiletter control sequences out of 15000+600000
+ 41621 strings out of 481239
+ 942576 string characters out of 5920377
+ 1353689 words of memory out of 5000000
+ 55973 multiletter control sequences out of 15000+600000
  618299 words of font info for 221 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,12n,91p,568b,1260s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1747,10 +1825,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on gvv_feedback_manual.pdf (3 pages, 81339 bytes).
+Output written on gvv_feedback_manual.pdf (4 pages, 126272 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 55 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 323 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
