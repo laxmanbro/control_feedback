@@ -1,10 +1,8 @@
 # Released under GNU-GPL
 # By B Sai Laxman
-# Dt.1st May
+# Dt.30th May
 
-import numpy as # Released under GNU-GPL
-# By B Sai Laxman
-# Dt.1st Maynp
+import numpy as np
 import matplotlib.pyplot as plt
 
 #if using termux
@@ -22,7 +20,7 @@ plt.ylabel('Vout')
 plt.title('Output from Oscillator -- R2/R1 = 2.35')
 
 #if using termux
-plt.savefig('./figs/ee18btech11049/ee18btech11049_1.pdf')
-plt.savefig('./figs/ee18btech11049/ee18btech11049_2.eps')
-subprocess.run(shlex.split("termux-open ./figs/ee18btech11049_1.pdf"))
+plt.savefig('../../figs/ee18btech11049/ee18btech11049_2.pdf')
+plt.savefig('../../figs/ee18btech11049/ee18btech11049_2.eps')
+subprocess.run(shlex.split("termux-open ../../figs/ee18btech11049/ee18btech11049_2.pdf"))
 # plt.show()

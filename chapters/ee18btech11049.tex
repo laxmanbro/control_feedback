@@ -50,7 +50,7 @@ G &= \frac{A_{0}}{1+A_{0}G_{1}}
 \implies G&\approx \frac{1}{G_{1}}, \quad   A_{0}\to\infty
 \\
 \text{or, } G &= \frac{R_{1}+R_{2}}{R_{1}}=1+\frac{R_{2}}{R_{1}}
-\label{eq:ee18btech11047_G}
+\label{eq:ee18btech11049_G}
 \end{align}
 
 
@@ -72,15 +72,54 @@ from fig \ref{fig:ee18btech11049_h_block}
 \end{align}
 \begin{align}
     H = \frac{1}{3+j\brak{\omega CR - 1/\omega CR}}
+    \label{eq:ee18btech11049_h}
 \end{align}
 
-
-
-\item Find frequency of oscillation when the excess phase shift \brak{lag} is 5.7\degree
+\item Design the circuit for operation at 10khz , without varying resistance .
 \\
-\solution  The loop gain of wein bridge oscillator$L\brak{j\omega}$ is 
+\\
+\solution  As we know the RC circuit $\brak{H block}$ determines the frequency of oscillation.
+\begin{align}
+    f = \frac{1}{2\pi RC}\\
+    \implies RC = 1.6 * 10^{-5}
+    \label{eq:ee_cap}
+\end{align}
+So, we change the Capacitor value to 1.6nF \\
 
 
+
+
+\item Find frequency of oscillation when the excess phase shift \brak{lag} of 5.7\degree
+\\ \\
+\solution  The phase shift in loop can only be caused by H block as it contains the frequency components unlike G block. \\
+From eq.\ref{eq:ee18btech11049_h} we get ,
+
+
+
+\begin{align}
+\label{eq:ee18btech11049_loop_phase}
+    \phi\brak{\omega} = \tan^{-1}\brak{\frac{\omega CR - 1/\omega CR}{3}}
+\end{align}
+
+\begin{align}
+    \phi\brak{\omega} = 5.7 \degree 
+\end{align}
+\begin{align}
+    \frac{\omega CR - 1/\omega CR}{3} = 0.1
+\end{align}
+%
+From RC value in eq \ref{eq:ee_cap} we get
+
+\begin{align}
+    \omega = 53824.21 rad/s
+\end{align}
+\begin{align}
+    \frac{1}{2\pi f} &= 53824.21 \\
+    \implies f &= 8.5 khz 
+\end{align}
+
+\item verify the above result using differential analysis.\\
+\solution 
 \begin{align}
     L\brak{j\omega} = H\brak{j\omega}G\brak{j\omega}
 \end{align}
@@ -90,19 +129,15 @@ from fig \ref{fig:ee18btech11049_h_block}
     L\brak{j\omega} = \frac{1+ R_2/R_1 }  {3+j\brak{\omega CR - 1/\omega CR}}
 \end{align}
 %
-The phase shift of loop is 
+% The phase shift of loop is 
+As the change in phase is very small. 
 \begin{align}
-\label{eq:ee18btech11049_loop_phase}
     \phi\brak{\omega} = \tan^{-1}\brak{\frac{\omega CR - 1/\omega CR}{3}}
 \end{align}
-%
-The loop gain will be a real number
-(i.e., the phase will be zero) at the frequency
 
-\begin{align}
-\label{eq:ee18btech11049_freq}
-    \omega = \frac{1}{CR}
-\end{align}
+% \begin{align}
+%     \omega = \frac{1}{CR}
+% \end{align}
 %
 Differentiating $\phi\brak{\omega} $ with $\omega$
 
@@ -125,9 +160,10 @@ And since $\omega = 1/CR$ upon evaluating
 \end{align}
 %
 \begin{align}
-\label{eq:ee18btech11049_freq}
+\label{eq:ee18btech11049_gg}
     \text{and } \Delta\omega = \frac{\Delta\phi}{ \frac{\partial \phi\brak{\omega}}{\partial \omega}}
 \end{align}
+Above equation \ref{eq:ee18btech11049_gg}  is only for small parameter changes
 
 \begin{align}
 \label{eq:ee18btech11049_freq}
@@ -136,14 +172,15 @@ And since $\omega = 1/CR$ upon evaluating
 
 \begin{align}
 \label{eq:ee18btech11049_freq}
-    \Delta\omega = 0.15\omega
+    \Delta f = 0.15f
 \end{align}
+
 %
 So, the frequency of oscillation is 
 \begin{align}
 \label{eq:ee18btech11049_freq}
-    \omega - \Delta\omega = 10-0.15x10\\ 
-    = 8.15 kHz
+    f - \Delta f &= 10-\brak{0.15*10}\\ 
+    \implies 8.5 kHz
 \end{align}
 
 \item What change must be made in the shunt resistor of the wien bridge, to restore the frequency of oscillation ? \\
@@ -205,21 +242,23 @@ Condition for oscillation is $1-L\brak{s} = 0$
     \frac{R_2}{R_1} = 2.35
 \end{align}
 
-\item Verify and compare the oscillator results using ngspice . 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Spice simulation of the original circuit before redesign . 
 \\
 
 \solution 
 
 \begin{itemize}
 \item Refer to Fig. \ref{fig:ee18btech11049_original}
- for the spice simulation output.  
+ for output, $f_r = 1 khz $
 \item original netlist simulated circuit here:
 \begin{lstlisting}
 codes/ee18btech11049/ee18btech11049_1.net
 \end{lstlisting}
-\item You can find the python script for the above, used to generate the output here:
+\item You can find the python script for the above here:
 \begin{lstlisting}
-spice/ee18btech11049/ee18btech11049_1.py
+codes/ee18btech11049/ee18btech11049_1.py
 \end{lstlisting}
 \end{itemize}
 
@@ -230,23 +269,71 @@ spice/ee18btech11049/ee18btech11049_1.py
 \label{fig:ee18btech11049_original}
 \end{figure}
 
-\item Re-designed output . 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\item spice simulation after changing capacitance to 1.6nF 
 \begin{itemize}
 \item Refer to Fig. \ref{fig:ee18btech11049_original}
- for the spice simulation output.  
+ for the spice output, $f_r = 8.5 khz$  
 \item original netlist simulated circuit here:
 \begin{lstlisting}
 codes/ee18btech11049/ee18btech11049_2.net
 \end{lstlisting}
 \item You can find the python script for the above, used to generate the output here:
 \begin{lstlisting}
-spice/ee18btech11049/ee18btech11049_2.py
+codes/ee18btech11049/ee18btech11049_2.py
 \end{lstlisting}
 \end{itemize}
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\columnwidth]{./figs/ee18btech11049/ee18btech11049_2.eps}
+\caption{Simulation result}
+\label{fig:ee18btech11049_final}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\item spice simulation after changing shunt resistance to restore frequency  
+\begin{itemize}
+\item Refer to Fig. \ref{fig:ee18btech11049_original}
+ for the spice output, $f_r = 10 khz$  
+\item original netlist simulated circuit here:
+\begin{lstlisting}
+codes/ee18btech11049/ee18btech11049_3.net
+\end{lstlisting}
+\item You can find the python script for the above, used to generate the output here:
+\begin{lstlisting}
+codes/ee18btech11049/ee18btech11049_3.py
+\end{lstlisting}
+\end{itemize}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11049/ee18btech11049_3.eps}
+\caption{Simulation result}
+\label{fig:ee18btech11049_final}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item spice simulation after changing $R_2/R_1$ to restore oscillations  
+\begin{itemize}
+\item Refer to Fig. \ref{fig:ee18btech11049_original}
+ for the spice output, $f_r = 10 khz $  
+\item original netlist simulated circuit here:
+\begin{lstlisting}
+codes/ee18btech11049/ee18btech11049_4.net
+\end{lstlisting}
+\item You can find the python script for the above, used to generate the output here:
+\begin{lstlisting}
+codes/ee18btech11049/ee18btech11049_4.py
+\end{lstlisting}
+\end{itemize}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11049/ee18btech11049_4.eps}
 \caption{Simulation result}
 \label{fig:ee18btech11049_final}
 \end{figure}
